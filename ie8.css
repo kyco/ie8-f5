@@ -1,0 +1,19 @@
+// Import grid support for IE8, this is SASS syntax for the
+// sake of not having to copy the file contents here.
+@import "ie8-12col-grid-support";
+
+// Custom styling for IE8
+.lt-ie9 {
+	.show-for-medium-down,
+	.show-for-medium,
+	.show-for-small,
+	.show-on-android {
+		display: none !important;
+	}
+
+	.show-for-large-up,
+	.hide-for-medium-down,
+	.hide-on-android {
+		display: block !important;
+	}
+}

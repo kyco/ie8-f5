@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie10 lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+<head>
+	// ... charset, title, relevant meta tags etc.
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+
+	// Your main stylesheet, this contains all your styles.
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		// Your IE8 stylesheet, see ie8-grid-support.css further below which
+		// needs to be included in the ie8.css before you write any custom
+		// IE8 rules (i.e. at the top of your ie8.css file). You might have
+		// to change the ".row" width to match your project.
+		<link rel="stylesheet" href="css/ie8.css">
+
+		// Your first IE8 shim set, takes care of CSS, media queries and
+		// ES5 functions and methods support, see further below what's
+		// included in this file.
+		<script src="js/ie8-head.js"></script>
+	<![endif]-->
+
+	// ... favicon, modernizr, GA code etc.
+</head>
+<body>
+	// ... your page markup
+
+	// Your site's compressed js file, it needs some amendments. Take a look
+	// further below for specifics. It includes a Foundation shim before the
+	// foundation initiate function.
+	<script src="js/production.js"></script>
+
+	// ... possibly some more markup and/or scripts
+
+	// The following must be the absolute last thing before the closing body tag.
+	<!--[if lt IE 9]>
+		<div class="browsehappy">
+			<p>
+				You are using an <strong>outdated</strong> browser.
+				Please <a href="//browsehappy.com/">upgrade your browser</a>
+				to improve your experience.
+			</p>
+			<span class="close">X</span>
+		</div>
+
+		// The last shim to do REM conversions.
+		<script src="js/ie8.js"></script>
+	<![endif]-->
+</body>
+</html>
