@@ -1,14 +1,23 @@
 Getting Foundation 5 to work in IE8
 ===================================
 
-Over the past days I had to get a site to work in IE8 with Foundation 5.
-Having gone through lots of frustration and hours of reading "solutions"
-on forums I've decided to compile a template of things I did to solve 
-this problem.
-
-Hopefully it will ease your pain of getting your own site to work in IE8 
-with Foundation 5. It's not a fix-all solution, but it will get you there
-to roughly 80-90%.
+**Breakdown:**
+<ol>
+    <li>Use jQuery v1.x and not v2.x</li>
+    <li>Include IE8 grid support CSS</li>
+    <li>
+        <span>Include shims in HEAD after CSS</span>
+        <ol>
+            <li>cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js</li>
+            <li>s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js</li>
+            <li>html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js</li>
+            <li>cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js</li>
+            <li>github.com/es-shims/es5-shim - shim.js</li>
+        </ol>
+    </li>
+    <li>Include Foundation js fix before initiating foundation</li>
+    <li>Include REM shim at very bottom of page</li>
+</ol>
 
 foundation-ie8-template.html
 ----------------------------
