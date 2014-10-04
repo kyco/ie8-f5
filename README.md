@@ -95,7 +95,7 @@ ie8.css
 <code>// Import grid support for IE8, this is SASS syntax for the
 // sake of not having to copy the file contents here.
 // Copy & paste if you're not using SASS to compile your stylesheets.
-@import "ie8-12col-grid-support";
+@import "ie8-grid-support";
 
 // Custom styling for IE8
 .lt-ie9 {
