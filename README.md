@@ -328,5 +328,4 @@ ie8.js
 Support
 -------
 
-For bugs or improvements please use the [issues tab](https://github.com/kyco/ie8-f5/issues)
-or email [support@kycosoftware.com](mailto:support@kycosoftware.com).
+For bugs or improvements please use the [issues tab](https://github.com/kyco/ie8-f5/issues) or email [support@kyco.io](mailto:support@kyco.io).
